@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 
 import 'package:one/firebase_options.dart';
+import 'package:one/firstpage.dart';
 import 'package:one/user/u_home.dart';
 
 void main() async {
@@ -26,7 +27,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.grey[300],
-        body: u_home(),
+        body: Firstpage(),
         // body: Center(
         //   child: Column(
         //     mainAxisAlignment: MainAxisAlignment.center,

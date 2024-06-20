@@ -14,9 +14,13 @@ class u_trackingState extends State<u_tracking> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
+      body: Column(
         children: [
+          SizedBox(
+            height: 40,
+          ),
           Container(
+            height: 500,
             child: GoogleMap(
               initialCameraPosition:
                   CameraPosition(zoom: 13, target: LatLng(10, 30)),
@@ -28,7 +32,7 @@ class u_trackingState extends State<u_tracking> {
           ),
           Center(
               child: Positioned(
-                  top: 16, left: 0, right: 0, child: Text("Location ON")))
+                  top: 16, left: 0, right: 0, child: Text("Location ON"))),
         ],
       ),
     );
